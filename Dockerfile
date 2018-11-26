@@ -1,6 +1,6 @@
-FROM diuis/docker-debian9-git_wget_python3_nodejs
+FROM diuis/docker-debian9-git_wget
 
-RUN apt-get update
+RUN apt-get update && apt-get install -y cmake
 RUN mkdir emsdk && chown appuser emsdk
 
 USER appuser
