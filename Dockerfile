@@ -1,6 +1,6 @@
 FROM diuis/docker-debian9-git_wget_python3
 
-RUN apt-get update && apt-get install -y cmake
+RUN apt-get update && apt-get install -y cmake apt-utils
 RUN mkdir emsdk && chown appuser emsdk
 
 USER appuser
